@@ -1,0 +1,63 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "field:asset,zone:"
+msgid "Zone"
+msgstr "Zona"
+
+msgctxt "field:asset.zone,create_date:"
+msgid "Create Date"
+msgstr "Fecha de creación"
+
+msgctxt "field:asset.zone,create_uid:"
+msgid "Create User"
+msgstr "Usuario de creación"
+
+msgctxt "field:asset.zone,employee:"
+msgid "Employee"
+msgstr "Empleado"
+
+msgctxt "field:asset.zone,id:"
+msgid "ID"
+msgstr "Identificador"
+
+msgctxt "field:asset.zone,name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:asset.zone,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:asset.zone,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:asset.zone,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:company.employee,zones:"
+msgid "Zones"
+msgstr "Zonas"
+
+msgctxt "model:asset.zone,name:"
+msgid "Zone"
+msgstr "Zona"
+
+msgctxt "model:ir.action,name:act_asset_zone"
+msgid "Zones"
+msgstr "Zonas"
+
+msgctxt "model:ir.ui.menu,name:menu_asset_zone"
+msgid "Zones"
+msgstr "Zonas"
+
+msgctxt "view:asset.zone:"
+msgid "Zone"
+msgstr "Zona"
+
+msgctxt "view:asset.zone:"
+msgid "Zones"
+msgstr "Zonas"
