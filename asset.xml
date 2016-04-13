@@ -3,17 +3,19 @@
      copyright notices and license terms. -->
 <tryton>
     <data>
-
+        <!-- asset.zone -->
         <record model="ir.ui.view" id="asset_zone_view_form">
             <field name="model">asset.zone</field>
             <field name="type">form</field>
             <field name="name">asset_zone_form</field>
         </record>
+
         <record model="ir.ui.view" id="asset_zone_view_list">
             <field name="model">asset.zone</field>
             <field name="type">tree</field>
             <field name="name">asset_zone_list</field>
         </record>
+
         <record model="ir.action.act_window" id="act_asset_zone">
             <field name="name">Zones</field>
             <field name="res_model">asset.zone</field>
@@ -28,6 +30,7 @@
             <field name="view" ref="asset_zone_view_form"/>
             <field name="act_window" ref="act_asset_zone"/>
         </record>
+
         <record model="ir.model.access" id="access_asset_zone">
             <field name="model" search="[('model', '=', 'asset.zone')]"/>
             <field name="perm_read" eval="True"/>
@@ -35,6 +38,7 @@
             <field name="perm_create" eval="False"/>
             <field name="perm_delete" eval="False"/>
         </record>
+
         <record model="ir.model.access" id="access_asset_zone_admin">
             <field name="model" search="[('model', '=', 'asset.zone')]"/>
             <field name="group" ref="asset.group_asset_admin"/>
@@ -43,24 +47,30 @@
             <field name="perm_create" eval="True"/>
             <field name="perm_delete" eval="True"/>
         </record>
+
+        <!-- company.employee -->
         <record model="ir.ui.view" id="company_employee_view_form">
             <field name="model">company.employee</field>
-            <field name="type">form</field>
+            <field name="type" eval="None"/>
             <field name="inherit" ref="company.employee_view_form"/>
             <field name="name">company_employee_form</field>
         </record>
+
+        <!-- asset -->
         <record model="ir.ui.view" id="asset_view_form">
             <field name="model">asset</field>
-            <field name="type">form</field>
+            <field name="type" eval="None"/>
             <field name="inherit" ref="asset.asset_view_form"/>
             <field name="name">asset_form</field>
         </record>
+
         <record model="ir.ui.view" id="asset_view_list">
             <field name="model">asset</field>
-            <field name="type">tree</field>
+            <field name="type" eval="None"/>
             <field name="inherit" ref="asset.asset_view_list"/>
             <field name="name">asset_list</field>
         </record>
+
         <!-- Menus -->
         <menuitem action="act_asset_zone" id="menu_asset_zone"
             parent="asset.menu_configuration" sequence="10"/>
